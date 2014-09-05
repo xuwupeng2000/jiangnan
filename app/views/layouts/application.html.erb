@@ -4,6 +4,9 @@
   <title>Jiangnan</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!--[if lt IE 9]>
+    <%= javascript_include_tag 'html5shiv' %>
+  <![endif]-->
   <%= csrf_meta_tags %>
 </head>
 <body class="abstract">
@@ -11,4 +14,13 @@
 <%= yield %>
 
 </body>
+
+<!-- FOOTER -->
+<footer class="abstract-footer">
+  <div class="container">
+    <p>&copy; 2014 Crafted by Jack Wu with LOVE. ALL RIGHTS LEFT by the name of GNU. &middot;</p>
+  </div>
+</footer>
+<!-- FOOTER -->
+
 </html>

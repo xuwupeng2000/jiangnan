@@ -13,5 +13,6 @@
  *= require_tree .
  *= require flat-ui
  *= require abstract
+ *= require image_holders
  *= require_self
  */

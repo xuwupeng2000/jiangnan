@@ -1,4 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 .abstract {
+  font-family: "Open Sans", sans-serif;
+
   h1,
   .h1 {
     font-size: 40px;
@@ -30,8 +35,39 @@
   }
   .lead {
     margin-bottom: 30px;
-    font-size: 26px;
+    font-size: 16px;
     line-height: 1.46428571;
     font-weight: 300;
   }
+
+  #about-me {
+    padding-top:12%;
+  }
+
+  .img-cut {
+    min-height:180px;
+  }
+
+  #scau {
+    padding-top:10%;
+  }
+
+  #nzx {
+    padding-top:10%;
+  }
+
+  .text-muted {
+    color: #bdc3c7;
+    font-size:18px;
+  }
+
+  .bg-darker {
+
+  }
+}
+
+.abstract-footer {
+  padding: 10px;
+  background-image: url("island.png");
+  color: white;
 }

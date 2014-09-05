@@ -1,6 +1,48 @@
 @font-face {
+  font-family: 'Lato';
+  src: url('lato/lato-black.eot');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('lato/lato-bold.eot');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('lato/lato-bolditalic.eot');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('lato/lato-italic.eot');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('lato/lato-light.eot');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('lato/lato-regular.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url('http://fonts.googleapis.com/css?family=Ubuntu:300');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Flat-UI-Icons";
-  src: url('fonts/flat-ui-icons-regular.eot');
+  src: url('flat-ui-icons-regular.ttf');
   font-weight: normal;
   font-style: normal;
 }

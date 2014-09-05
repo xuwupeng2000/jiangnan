@@ -21,7 +21,7 @@ module Jiangnan
     # config.i18n.default_locale = :de
     config.assets.paths << "#{Rails.root}/app/assets/lib"
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
-    #config.assets.precompile += ['vendor/ie9.css']
+    config.assets.precompile += ['html5shiv.js']
 
 
     config.generators do |g|
