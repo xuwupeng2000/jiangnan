@@ -41,7 +41,7 @@
   }
 
   #about-me {
-    padding-top:12%;
+    padding-top: 3%;
   }
 
   .img-cut {
@@ -61,8 +61,18 @@
     font-size:18px;
   }
 
-  .bg-darker {
+  .light-list{
+    span {
+      padding-right:3px;
+    }
+    p {
+      font-weight: 300;
+    }
+  }
 
+  h1, h2, h3 {
+    margin-bottom: 32px;
+    margin-top: 30px;
   }
 }
 
