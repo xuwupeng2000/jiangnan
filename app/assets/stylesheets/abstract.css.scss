@@ -59,21 +59,30 @@
     padding-bottom: 36px;
   }
 
-  .ruby-icon {
-    ul {
-      list-style-type: none;
-      padding: 0px;
-      margin: 0px;
-    }
-
-    ul li {
-      background-image: url("ruby.png");
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.72222;
+    li {
       background-position: 0 0;
       background-repeat: no-repeat;
       padding-left: 30px;
+      padding-top: 5px;
       font-size:14px;
       font-weight:300;
-      line-height: 1.72222;
+    }
+  }
+
+  .ruby-icon {
+    ul li {
+      background-image: url("ruby.png");
+    }
+  }
+
+  .coffee-icon {
+    ul li {
+      background-image: url("coffee.png");
     }
   }
 
