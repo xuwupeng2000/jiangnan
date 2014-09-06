@@ -1,8 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Arimo);
 
 .abstract {
   font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 
   h1,
   .h1 {
@@ -33,15 +35,61 @@
     line-height: 1.72222;
     margin: 0 0 15px;
   }
-  .lead {
-    margin-bottom: 30px;
-    font-size: 16px;
-    line-height: 1.46428571;
-    font-weight: 300;
+
+  .navbar-inverse {
+    background: none repeat scroll 0 0 rgba(33, 33, 36, 0.95);
+  }
+
+  .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+  }
+
+  .features {
+    h5 {
+      text-align: right;
+      padding-bottom:12px;
+      border-bottom: 1px solid #e74c3c;
+    }
+  }
+
+  section {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .ruby-icon {
+    ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    ul li {
+      background-image: url("ruby.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      padding-left: 30px;
+      font-size:14px;
+      font-weight:300;
+      line-height: 1.72222;
+    }
+  }
+
+  .ruby-layer {
+    text-align: center;
+    background-color:#c0392b;
+    color:white;
+    padding-bottom:20px;
+    padding-bottom:20px;
   }
 
   #about-me {
     padding-top: 3%;
+    p {
+      font-size:16px;
+    }
   }
 
   .img-cut {
@@ -58,16 +106,6 @@
 
   .text-muted {
     color: #bdc3c7;
-    font-size:18px;
-  }
-
-  .light-list{
-    span {
-      padding-right:3px;
-    }
-    p {
-      font-weight: 300;
-    }
   }
 
   h1, h2, h3 {
