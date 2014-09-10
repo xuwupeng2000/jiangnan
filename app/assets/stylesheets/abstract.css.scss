@@ -4,32 +4,35 @@
 
 .abstract {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
 
-  h1,
-  .h1 {
+  .lead {
+    font-size:16px;
+  }
+
+  h1, .h1 {
     font-size: 40px;
   }
-  h2,
-  .h2 {
+
+  h2, .h2 {
     font-size: 30px;
   }
-  h3,
-  .h3 {
+
+  h3, .h3 {
     font-size: 26px;
   }
-  h4,
-  .h4 {
+
+  h4, .h4 {
     font-size: 22px;
   }
-  h5,
-  .h5 {
+
+  h5, .h5 {
     font-size: 18px;
   }
-  h6,
-  .h6 {
+
+  h6, .h6 {
     font-size: 16px;
   }
+
   p {
     font-size: 14px;
     line-height: 1.72222;
@@ -49,7 +52,7 @@
   .features {
     h5 {
       text-align: right;
-      padding-bottom:12px;
+      padding-bottom:14px;
       border-bottom: 1px solid #e74c3c;
     }
   }
@@ -72,7 +75,6 @@
       background-repeat: no-repeat;
       padding-left: 30px;
       font-size:14px;
-      font-weight:300;
       line-height: 1.72222;
     }
   }
@@ -87,9 +89,6 @@
 
   #about-me {
     padding-top: 3%;
-    p {
-      font-size:16px;
-    }
   }
 
   .img-cut {
