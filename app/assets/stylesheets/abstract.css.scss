@@ -62,13 +62,13 @@
     padding-bottom: 36px;
   }
 
-  .ruby-icon {
-    ul {
-      list-style-type: none;
-      padding: 0px;
-      margin: 0px;
-    }
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
 
+  .ruby-icon {
     ul li {
       background-image: url("ruby.png");
       background-position: 0 0;
@@ -78,6 +78,19 @@
       line-height: 1.72222;
     }
   }
+
+  .coffee-icon {
+    ul li {
+      background-image: url("coffee.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      padding-left: 30px;
+      font-size:14px;
+      line-height: 1.72222;
+    }
+  
+  }
+
 
   .ruby-layer {
     text-align: center;
