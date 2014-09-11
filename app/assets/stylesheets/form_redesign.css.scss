@@ -1,0 +1,26 @@
+label {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.7;
+  width: 25%;
+}
+
+input {
+  font-size: 12px;
+  width: 50%;
+  line-height: 1.7;
+  clear: right;
+}
+
+input[type=submit] {
+  float: right;
+  margin-right: 25%;
+  margin-top: 5%;
+  max-width: 100px;
+  clear: both;
+}
+
+input[type=checkbox] {
+  max-width: 100px;
+  margin-left:17.5%;
+}
