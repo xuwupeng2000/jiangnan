@@ -15,7 +15,10 @@ gem 'jbuilder', '~> 2.0'
 
 # Authentication
 gem 'devise'
-gem 'cancancan', '~> 1.9.2'
+
+# Authorization
+gem "rolify"
+gem "pundit"
 
 group :development do 
   gem 'spring'
