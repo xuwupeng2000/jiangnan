@@ -27,26 +27,29 @@
 
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Resume</a></li>
-              <li><a href="#about">Blog</a></li>
-              <li><a href="#contact">Contact Me</a></li>
+              <li><a href="<%= root_path %>">Resume</a></li>
+              <li><a href="<%= posts_path %>">Blog</a></li>
 
-              <!-- -Login or Sign up -->
-              <!--
-                 -<li class="dropdown">
-                 -  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                 -  <ul class="dropdown-menu" role="menu">
-                 -    <li><a href="#">Action</a></li>
-                 -    <li><a href="#">Another action</a></li>
-                 -    <li><a href="#">Something else here</a></li>
-                 -    <li class="divider"></li>
-                 -    <li class="dropdown-header">Nav header</li>
-                 -    <li><a href="#">Separated link</a></li>
-                 -    <li><a href="#">One more separated link</a></li>
-                 -  </ul>
-                 -</li>
-                 -->
-                 <!-- -Login or Sign up -->
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">Contact Me <b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li class="linkedin-icon"><a href="http://www.linkedin.com/pub/peng-wu/49/5b5/7ab"> Linkedin Profile </a></li>
+                  <li class="gmail-icon"><a href="mailto:xuwupeng2000@gmail.com?Subject=From Online Resume"> Email Me </a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">Account <b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                  <% if current_user %>
+                    <li> <%= link_to "Edit Your Account", edit_user_registration_path %> </li>
+                    <li> <%= link_to "Sign Out", destroy_user_session_path, method: :delete %> </li>
+                  <% else %>
+                    <li> <%= link_to "Login ", new_user_session_path %> </li>
+                    <li> <%= link_to "Sign Up", new_user_registration_path %> </li>
+                  <% end %>
+                </ul>
+              </li>
 
             </ul>
           </div>
@@ -63,7 +66,7 @@
 <!-- FOOTER -->
 <footer class="abstract-footer">
   <div class="container">
-    <p>&copy; 2014 Crafted by Jack Wu with LOVE. ALL RIGHTS LEFT by the name of GNU. &middot;</p>
+    <p>&copy; 2014 Crafted by Jack Wu with LOVE. ALL RIGHTS LEFT in the name of GNU. &middot;</p>
   </div>
 </footer>
 <!-- FOOTER -->
