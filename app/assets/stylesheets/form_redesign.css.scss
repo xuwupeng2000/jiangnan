@@ -31,3 +31,11 @@ input[type=checkbox] {
 #error_explanation {
   font-size:14px;
 }
+
+textarea {
+  font-size: 12px;
+  line-height: 24px;
+  padding: 5px 11px;
+  min-width:50%;
+  min-height:155px;
+}

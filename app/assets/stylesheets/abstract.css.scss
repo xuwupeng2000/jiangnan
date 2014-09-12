@@ -11,6 +11,69 @@
     line-height: 2.067;
   }
 
+  .flash-messages {
+    padding:2px;
+    margin-top: -30px;
+
+    .flash-message {
+      font-size: 14px;
+      text-align: center;
+      color: white;
+    }
+
+    .flash-notice {
+      background-color: #27ae60;
+    }
+
+    .flash-success {
+      background-color: #27ae60;
+    }
+
+    .flash-error {
+      background-color: #c0392b;
+    }
+  }
+
+  .nag {
+    margin-top:-22px;
+  }
+
+  .post-bar {
+    padding: 5px;
+    border-bottom: 1px solid #e74c3c;
+  }
+
+  .post-title {
+    text-decoration: underline;
+  }
+
+  .post-new {
+    margin-top: 12px;
+  }
+
+  .post-actions {
+    display: inline-block;
+    font-size: 16px;
+    padding: 6px;
+    div {
+      float: right;
+    }
+  }
+  .post-content {
+    padding:15px;
+    border-radius: 6px;
+    border: 1px solid #bdc3c7;
+    background-color:#ecf0f1;
+  }
+
+  .post-entry {
+    margin-bottom:12px;
+  }
+
+  .all-posts {
+    padding:5px;
+  }
+
   .lead {
     font-size:16px;
   }
@@ -158,6 +221,7 @@
   }
 
   .devise-bar {
+    padding: 5px;
     display: block;
     clear: both;
   }
