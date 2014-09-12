@@ -1,26 +1,33 @@
 label {
   font-size: 14px;
   font-weight: normal;
+  display: block;
   line-height: 1.7;
-  width: 25%;
 }
 
 input {
+  display: block;
   font-size: 12px;
   width: 50%;
   line-height: 1.7;
-  clear: right;
 }
 
 input[type=submit] {
-  float: right;
-  margin-right: 25%;
-  margin-top: 5%;
+  margin-top: 10px;
   max-width: 100px;
-  clear: both;
 }
 
 input[type=checkbox] {
+  display: inline-block;
   max-width: 100px;
-  margin-left:17.5%;
+}
+
+.field_with_errors {
+    label {
+      color: #c0392b;
+    }
+}
+
+#error_explanation {
+  font-size:14px;
 }

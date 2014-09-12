@@ -40,7 +40,7 @@
               </li>
 
               <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle">Account <b class="caret"></b></a>
+                <a data-toggle="dropdown" class="dropdown-toggle"><%= current_user ? current_user.email : 'Account' %> <b class="caret"></b></a>
                 <ul role="menu" class="dropdown-menu">
                   <% if current_user %>
                     <li> <%= link_to "Edit Your Account", edit_user_registration_path %> </li>

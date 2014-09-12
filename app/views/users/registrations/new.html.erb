@@ -1,5 +1,5 @@
 <section class="container">
-  <div class="col-lg-8 slide">
+  <div class="col-lg-8 col-sm-12 slide">
     <h2>Sign up</h2>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -8,6 +8,11 @@
       <div>
         <%= f.label :email %>
         <%= f.email_field :email, autofocus: true %>
+      </div>
+
+      <div>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
       </div>
 
       <div>
@@ -24,7 +29,7 @@
     <% end %>
   </div>
 
-  <div class="col-lg-4">
+  <div class="col-lg-4 col-sm-12">
     <%= render "users/shared/links" %>
   </div>
 </section>

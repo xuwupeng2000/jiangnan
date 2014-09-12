@@ -6,6 +6,11 @@
   font-family: "Open Sans", sans-serif;
   min-height: 100%;
 
+  small, .small {
+    font-size: 70%;
+    line-height: 2.067;
+  }
+
   .lead {
     font-size:16px;
   }
@@ -165,7 +170,7 @@
       background-position: 0 0;
       background-size: 24px 24px;
       background-repeat: no-repeat;
-      padding-left: 18px;
+      padding-left: 32px;
     }
 
     .gmail-icon {
@@ -173,7 +178,7 @@
       background-position: 0 0;
       background-size: 24px 24px;
       background-repeat: no-repeat;
-      padding-left: 18px;
+      padding-left: 32px;
     }
   }
 }
