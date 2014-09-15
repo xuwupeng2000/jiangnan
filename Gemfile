@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.5'
 gem 'sqlite3'
 
-gem 'turbolinks'
+#gem 'turbolinks'
 gem 'jquery-rails'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
@@ -19,6 +19,8 @@ gem 'devise'
 # Authorization
 gem "rolify"
 gem "pundit"
+
+gem 'gon'
 
 group :development do 
   gem 'spring'

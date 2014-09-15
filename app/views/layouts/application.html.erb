@@ -3,8 +3,9 @@
 <%= favicon_link_tag 'dna.png' %>
 <head>
   <title>Jiangnan</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= include_gon %>
   <!--[if lt IE 9]>
     <%= javascript_include_tag 'html5shiv' %>
   <![endif]-->
@@ -12,7 +13,7 @@
 </head>
 <body class="abstract">
 
-<div class="navbar-wrapper">
+<div ng-app="smartNavbar" ng-controller="smartNavbarController" class="navbar-wrapper">
     <div class="navbar navbar-static-top navbar-inverse" role="navigation">
         <div class="container">
 
@@ -28,8 +29,8 @@
 
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="<%= root_path %>">Resume</a></li>
-              <li><a href="<%= posts_path %>">Blog</a></li>
+              <li ng-class="getNavbarState('resume')"><a href="<%= root_path %>">Resume</a></li>
+              <li ng-class="getNavbarState('blog')"><a href="<%= posts_path %>">Blog</a></li>
 
               <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle">Contact Me <b class="caret"></b></a>
@@ -39,7 +40,7 @@
                 </ul>
               </li>
 
-              <li class="dropdown">
+              <li class="dropdown" ng-class="getNavbarState('account')">
                 <a data-toggle="dropdown" class="dropdown-toggle"><%= current_user ? current_user.email : 'Account' %> <b class="caret"></b></a>
                 <ul role="menu" class="dropdown-menu">
                   <% if current_user %>
