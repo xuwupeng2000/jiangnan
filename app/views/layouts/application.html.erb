@@ -13,65 +13,27 @@
 </head>
 <body class="abstract">
 
-<div ng-app="smartNavbar" ng-controller="smartNavbarController" class="navbar-wrapper">
-    <div class="navbar navbar-static-top navbar-inverse" role="navigation">
-        <div class="container">
+  <div class='navbar navbar-default navbar-fixed-top'>
+    <div class='top-nav-menu-button'> Menu </div>
+  </div>
 
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">qBit</a>
-          </div>
+  <div class="side-nav">
+    <ul class='side-menu'>
+      <li> <%= link_to "Resume",  root_path %> </li>
+      <li> <%= link_to "Blog",    posts_path %> </li>
+      <li> <%= link_to "Login ",  new_user_session_path %> </li>
+      <li> <%= link_to "Sign Up", new_user_registration_path %> </li>
+    </ul>
+  </div>
 
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li ng-class="getNavbarState('resume')"><a href="<%= root_path %>">Resume</a></li>
-              <li ng-class="getNavbarState('blog')"><a href="<%= posts_path %>">Blog</a></li>
+  <%= flash_messages %>
 
-              <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle">Contact Me <b class="caret"></b></a>
-                <ul role="menu" class="dropdown-menu">
-                  <li class="linkedin-icon"><a href="http://www.linkedin.com/pub/peng-wu/49/5b5/7ab"> Linkedin Profile </a></li>
-                  <li class="gmail-icon"><a href="mailto:xuwupeng2000@gmail.com?Subject=From Online Resume"> Email Me </a></li>
-                </ul>
-              </li>
-
-              <li class="dropdown" ng-class="getNavbarState('account')">
-                <a data-toggle="dropdown" class="dropdown-toggle"><%= current_user ? current_user.email : 'Account' %> <b class="caret"></b></a>
-                <ul role="menu" class="dropdown-menu">
-                  <% if current_user %>
-                    <li> <%= link_to "Edit Your Account", edit_user_registration_path %> </li>
-                    <li> <%= link_to "Sign Out", destroy_user_session_path, method: :delete %> </li>
-                  <% else %>
-                    <li> <%= link_to "Login ", new_user_session_path %> </li>
-                    <li> <%= link_to "Sign Up", new_user_registration_path %> </li>
-                  <% end %>
-                </ul>
-              </li>
-
-            </ul>
-          </div>
-
-        </div>
-    </div>
-</div>
-
-<%= flash_messages %>
-
-<%= yield %>
+  <%= yield %>
 
 </body>
 
 <!-- FOOTER -->
-<footer class="abstract-footer">
-  <div class="container">
-    <p>&copy; 2014 Crafted by Jack Wu with LOVE. ALL RIGHTS LEFT in the name of GNU. &middot;</p>
-  </div>
-</footer>
+<footer> </footer>
 <!-- FOOTER -->
 
 </html>

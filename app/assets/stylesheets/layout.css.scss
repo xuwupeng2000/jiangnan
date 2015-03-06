@@ -1,0 +1,50 @@
+.navbar {
+  border-top: 4px solid #e74c3c;
+  background: white;
+}
+
+.side-nav {
+  position: fixed;
+  bottom: 0;
+
+  z-index: 666;
+
+  width: 15%;
+
+  background: white;
+
+  li {
+    font-size: 12;
+    text-transform: uppercase;
+  }
+}
+
+ul.side-menu {
+  position: fixed;
+  bottom: 0;
+  top: 48px;
+
+  width: 15%;
+
+  padding-top: 4px;
+  padding-left: 24px;
+
+  background: none repeat scroll 0 0 #eff0f0;
+}
+
+.abstract-footer {
+  padding: 10px;
+  background-image: url("island.png");
+  color: white;
+  height: 100px;
+  width: 100%;
+}
+
+.top-nav-menu-button {
+  padding-left: 24px;
+  padding-top: 6px;
+
+  cursor: pointer;
+
+  font-size: 20px;
+}
