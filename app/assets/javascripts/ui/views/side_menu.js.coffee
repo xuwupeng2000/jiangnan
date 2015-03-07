@@ -1,7 +1,7 @@
 $ ->
-  sideMenu = new Ui.SideMenu({ el: $('.js-side-menu') })
+  sideMenu = new Ui.Views.SideMenu({ el: $('.js-side-menu') })
 
-class Ui.SideMenu extends Backbone.View
+class Ui.Views.SideMenu extends Backbone.View
 
   initialize: ->
     this.innerMenu = this.$el.find('.side-nav')
@@ -9,7 +9,7 @@ class Ui.SideMenu extends Backbone.View
 
   events:
     'click .top-nav-menu-button': 'toggleMenu'
-    'mouseleave .side-nav': 'closeMenu'
+    'clickoutside': 'closeMenu'
 
   toggleMenu: (event) ->
     this.innerMenu.fadeToggle()
