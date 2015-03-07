@@ -4,11 +4,15 @@ $ ->
 class Ui.SideMenu extends Backbone.View
 
   initialize: ->
-    @innerMenu = this.$el.find('.side-nav')
-    @innerMenu.hide()
+    this.innerMenu = this.$el.find('.side-nav')
+    this.innerMenu.hide()
 
   events:
     'click .top-nav-menu-button': 'toggleMenu'
+    'mouseleave .side-nav': 'closeMenu'
 
-  toggleMenu: (event)->
-    this.innerMenu.toggle()
+  toggleMenu: (event) ->
+    this.innerMenu.fadeToggle()
+
+  closeMenu: (event) ->
+    this.innerMenu.fadeOut()
