@@ -30,6 +30,7 @@ gem 'therubyracer',  platforms: :ruby
 group :development do
   gem 'spring'
   gem 'thin', '~> 1.6.2'
+  gem 'pry-rails'
 end
 
 group :doc do
