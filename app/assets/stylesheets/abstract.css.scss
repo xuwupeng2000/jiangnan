@@ -56,19 +56,29 @@
     display: inline-block;
     font-size: 16px;
     padding: 6px;
+
+    text-transform: uppercase;
+
     div {
       float: right;
     }
+
+    span {
+      margin-left: 12px;
+    }
   }
+
   .post-content {
     padding:15px;
     border-radius: 6px;
     border: 1px solid #bdc3c7;
+
     background-color:#ecf0f1;
   }
 
   .post-entry {
-    margin-bottom:12px;
+    margin-top: 24px;
+    margin-bottom: 66px;
   }
 
   .all-posts {

@@ -32,9 +32,9 @@ class PostsController < ApplicationController
     authorize @post
 
     if @post.update(post_params)
-      redirect_to @posts, success: 'Post was successfully updated.' 
+      redirect_to @posts, success: 'Post was successfully updated.'
     else
-      render :edit 
+      render :edit
     end
   end
 
@@ -42,9 +42,9 @@ class PostsController < ApplicationController
     authorize @post
 
     if @post.destroy
-      redirect_to posts_url, success: 'Post was successfully destroyed.' 
+      redirect_to posts_url, success: 'Post was successfully destroyed.'
     else
-      redirect_to root_path, error: 'We are sorry but something went wrong.' 
+      redirect_to root_path, error: 'We are sorry but something went wrong.'
     end
   end
 
