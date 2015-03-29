@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Arimo);
+@import "font-awesome";
 
 .abstract {
   font-family: "Open Sans", sans-serif;
@@ -12,26 +13,22 @@
   }
 
   .flash-messages {
-    padding:2px;
-    margin-top: -30px;
+    color: white;
+    margin-top: 16px;
+    font-size: 14px;
+    text-align: center;
+  }
 
-    .flash-message {
-      font-size: 14px;
-      text-align: center;
-      color: white;
-    }
+  .flash-alert{
+    background: #e74c3c;
+  }
 
-    .flash-notice {
-      background-color: #27ae60;
-    }
+  .flash-notice{
+    background: #f1c40f;
+  }
 
-    .flash-success {
-      background-color: #27ae60;
-    }
-
-    .flash-error {
-      background-color: #c0392b;
-    }
+  .flash-success{
+    background: #2ecc71;
   }
 
   .nag {
@@ -55,19 +52,26 @@
     display: inline-block;
     font-size: 16px;
     padding: 6px;
+
+    text-transform: uppercase;
+
     div {
       float: right;
     }
+
+    span {
+      margin-left: 12px;
+    }
   }
+
   .post-content {
     padding:15px;
     border-radius: 6px;
-    border: 1px solid #bdc3c7;
-    background-color:#ecf0f1;
   }
 
   .post-entry {
-    margin-bottom:12px;
+    margin-top: 24px;
+    margin-bottom: 66px;
   }
 
   .all-posts {
@@ -245,12 +249,4 @@
       padding-left: 32px;
     }
   }
-}
-
-.abstract-footer {
-  padding: 10px;
-  background-image: url("island.png");
-  color: white;
-  height: 100px;
-  width: 100%;
 }

@@ -9,7 +9,7 @@ class PostPolicy < ApplicationPolicy
         #[]
       #end
 
-      # There is no attribute like :published 
+      # There is no attribute like :published
       # and therefore this scope doesn't been used yet.
       scope.all
     end
