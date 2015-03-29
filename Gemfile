@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.5'
 gem 'sqlite3'
+gem 'thin'
+
+gem 'eventmachine', '1.0.5'
 
 gem 'jquery-rails'
 gem 'sass-rails', '~> 4.0.3'
@@ -28,8 +31,9 @@ gem 'gon'
 gem 'therubyracer',  platforms: :ruby
 
 group :development do
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
   gem 'spring'
-  gem 'thin', '~> 1.6.2'
   gem 'pry-rails'
 end
 
